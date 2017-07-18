@@ -1,0 +1,63 @@
+h1 {
+  color: #7f1a00; }
+
+h2 {
+  color: #de7a1c; }
+
+.no-container {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+
+.no-padding {
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.navigation-panel-container {
+  display: table;
+  float: right;
+  height: 100%; }
+
+.navigation-panel {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  border: 1px solid #555; }
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none; }
+
+li {
+  text-align: center;
+  border-bottom: 1px solid #555; }
+
+li:last-child {
+  border-bottom: none; }
+
+li a.active {
+  background-color: #4CAF50;
+  color: white; }
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white; }
+
+.home-main {
+  height: 100vh; }
+
+.home-left-col {
+  background-image: url("../images/cabanelf_website_schets2.png");
+  background-size: cover; }
+
+.home-right-col {
+  background-image: url("../images/old-paper.jpg");
+  background-size: cover; }
