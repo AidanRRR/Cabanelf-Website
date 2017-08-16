@@ -33,41 +33,27 @@ h2 {
   vertical-align: middle;
   text-align: center; }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  border: 1px solid #555; }
+.ul-menu {
+  background-color: #7f1a00; }
 
-li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none; }
+.ul-over-ons {
+  background-color: #7f1a00; }
 
-li {
-  text-align: center;
-  border-bottom: 1px solid #555; }
+.ul-reservaties {
+  background-color: #7f1a00; }
 
-li:last-child {
-  border-bottom: none; }
+.ul-route {
+  background-color: #7f1a00; }
 
-li a.active {
-  background-color: #4CAF50;
-  color: white; }
-
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white; }
+.ul-galerij {
+  background-color: #7f1a00; }
 
 .home-main {
   height: 100vh; }
 
 .home-left-col {
   background-image: url("../images/cabanelf_website_schets2.png");
-  background-size: cover; }
+  background-size: contain; }
 
 .home-right-col {
   background-image: url("../images/old-paper.jpg");
@@ -76,3 +62,27 @@ li a:hover:not(.active) {
 .map {
   width: 100%;
   height: 100%; }
+
+@media only screen and (min-width: 200px) {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+  li a {
+    display: block;
+    color: #eaddd4;
+    padding: 8px 16px;
+    text-decoration: none; }
+  li {
+    text-align: center; }
+  li:last-child {
+    border-bottom: none; }
+  li a.active {
+    background-color: #de7a1c;
+    color: white;
+    display: block;
+    margin-left: 50px; }
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white; } }

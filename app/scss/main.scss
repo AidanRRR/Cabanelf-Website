@@ -50,39 +50,24 @@ h2 {
   text-align: center;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  border: 1px solid #555;
+.ul-menu {
+  background-color: $cabanelf-rood;
 }
 
-li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
+.ul-over-ons {
+  background-color: $cabanelf-rood;
 }
 
-li {
-  text-align: center;
-  border-bottom: 1px solid #555;
+.ul-reservaties {
+  background-color: $cabanelf-rood;
 }
 
-li:last-child {
-  border-bottom: none;
+.ul-route {
+  background-color: $cabanelf-rood;
 }
 
-li a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
+.ul-galerij {
+  background-color: $cabanelf-rood;
 }
 
 // PAGE SPECIFIC
@@ -92,7 +77,7 @@ li a:hover:not(.active) {
 
 .home-left-col {
   background-image: url('../images/cabanelf_website_schets2.png');
-  background-size: cover;
+  background-size: contain;
 }
 
 .home-right-col {
@@ -104,3 +89,36 @@ li a:hover:not(.active) {
   width: 100%;
   height: 100%;
 }
+
+@media only screen and (min-width: 200px) {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  li a {
+    display: block;
+    color: $cabanelf-achtergrond;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  li {
+    text-align: center;
+  }
+  li:last-child {
+    border-bottom: none;
+  }
+  li a.active {
+    background-color: $cabanelf-elf;
+    color: white;
+    display: block;
+    margin-left: 50px;
+  }
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 900px) {}
