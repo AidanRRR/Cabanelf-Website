@@ -12,6 +12,17 @@ h2 {
   padding: 0 !important;
   margin: 0 !important; }
 
+.logo-top-left {
+  position: absolute;
+  z-index: 1;
+  left: 40px;
+  top: 40px;
+  width: 151px;
+  height: 52px; }
+
+.text-center {
+  text-align: center; }
+
 .navigation-panel-container {
   display: table;
   float: right;
@@ -61,3 +72,7 @@ li a:hover:not(.active) {
 .home-right-col {
   background-image: url("../images/old-paper.jpg");
   background-size: cover; }
+
+.map {
+  width: 100%;
+  height: 100%; }
