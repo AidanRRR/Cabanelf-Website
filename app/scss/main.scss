@@ -4,121 +4,32 @@ $cabanelf-elf: rgba(222, 122, 28, 1);
 $cabanelf-achtergrond: rgba(234, 221, 212, 1);
 $cabanelf-2: rgba(252, 222, 190, 1);
 $cabanelf-3: rgba(212, 210, 165, 1);
+$navbar-bg: rgb(40, 40, 40);
 // FONTS
 h1 {
   color: $cabanelf-rood;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 60px;
+  margin-bottom: 45px;
 }
 
 h2 {
   color: $cabanelf-elf;
 }
 
-// GLOBAL STYLES
-.no-container {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+p {
+  font-family: 'Poppins', sans-serif;
 }
 
-.no-padding {
-  padding: 0 !important;
-  margin: 0 !important;
+// NAVBAR
+.navbar-gray {
+  background-color: $navbar-bg;
 }
 
-.logo-top-left {
-  position: absolute;
-  z-index: 1;
-  left: 40px;
-  top: 40px;
-  width: 151px;
-  height: 52px;
+.navbar-gray a {
+  color: #CCCCCC;
 }
 
-.text-center {
-  text-align: center;
+.navbar-gray a:hover {
+  color: white;
 }
-
-// NAVIGATION
-.navigation-panel-container {
-  display: table;
-  float: right;
-  height: 100%;
-}
-
-.navigation-panel {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.ul-menu {
-  background-color: $cabanelf-rood;
-}
-
-.ul-over-ons {
-  background-color: $cabanelf-rood;
-}
-
-.ul-reservaties {
-  background-color: $cabanelf-rood;
-}
-
-.ul-route {
-  background-color: $cabanelf-rood;
-}
-
-.ul-galerij {
-  background-color: $cabanelf-rood;
-}
-
-// PAGE SPECIFIC
-.home-main {
-  height: 100vh;
-}
-
-.home-left-col {
-  background-image: url('../images/cabanelf_website_schets2.png');
-  background-size: contain;
-}
-
-.home-right-col {
-  background-image: url('../images/old-paper.jpg');
-  background-size: cover;
-}
-
-.map {
-  width: 100%;
-  height: 100%;
-}
-
-@media only screen and (min-width: 200px) {
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-  li a {
-    display: block;
-    color: $cabanelf-achtergrond;
-    padding: 8px 16px;
-    text-decoration: none;
-  }
-  li {
-    text-align: center;
-  }
-  li:last-child {
-    border-bottom: none;
-  }
-  li a.active {
-    background-color: $cabanelf-elf;
-    color: white;
-    display: block;
-    margin-left: 50px;
-  }
-  li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
-}
-
-@media only screen and (min-width: 900px) {}
