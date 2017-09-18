@@ -1,11 +1,18 @@
-// COLORS
+// Colors
 $cabanelf-rood: rgba(127, 26, 0, 1);
 $cabanelf-elf: rgba(222, 122, 28, 1);
 $cabanelf-achtergrond: rgba(234, 221, 212, 1);
 $cabanelf-2: rgba(252, 222, 190, 1);
 $cabanelf-3: rgba(212, 210, 165, 1);
 $navbar-bg: rgb(40, 40, 40);
-// FONTS
+$cabanelf-huis-bg: rgb(205, 214, 223);
+// Logo
+.logo {
+  margin-left: 0px;
+  width: 75px;
+}
+
+// Fonts
 h1 {
   color: $cabanelf-rood;
   font-family: 'Libre Baskerville', serif;
@@ -21,15 +28,141 @@ p {
   font-family: 'Poppins', sans-serif;
 }
 
-// NAVBAR
+html {
+  height: 100%;
+}
+
+// Navbar
+.navbar-nav {
+  padding-right: 75px;
+  margin-top: 30px;
+}
+
 .navbar-gray {
+  padding-top: 2rem!important;
   background-color: $navbar-bg;
 }
 
 .navbar-gray a {
+  font-size: 1.2rem;
   color: #CCCCCC;
 }
 
 .navbar-gray a:hover {
   color: white;
+}
+
+.navbar-seperator {
+  width: 100%;
+  height: 50px;
+  background-color: $navbar-bg;
+  border-bottom: thick dotted #ff0000;
+}
+
+.nav-link {
+  display: inline;
+}
+
+.nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav-icon {
+  display: none;
+}
+
+.nav-icon:hover {
+  text-decoration: none;
+}
+
+.nav-icon-left {
+  display: none;
+}
+
+.nav-icon-bread {
+  display: inline;
+  padding: 10px;
+}
+
+.socials-bread {
+  margin-top: 30px;
+}
+
+// Cabanelf Huis
+#cabanelf-huis {
+  width: 100vw;
+  height: 25vh;
+  background: url('../images/cabanelfMain.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: fixed;
+  top: 150px;
+  z-index: -1;
+}
+
+#cabanelf-huis-background {
+  background-color: $cabanelf-huis-bg;
+}
+
+@media only screen and (min-width: 300px) {
+  #cabanelf-huis {
+    width: 100vw;
+    height: 50vh;
+  }
+}
+
+@media only screen and (min-width: 350px) {
+  .logo {
+    margin-left: 25px;
+    width: 125px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #cabanelf-huis {
+    width: 100vw;
+    height: 75vh;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .logo {
+    margin-left: 50px;
+    width: 150px;
+  }
+  .navbar-gray {
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+    background-color: $navbar-bg;
+  }
+  #cabanelf-huis {
+    width: 100vw;
+    height: 100vh;
+    top: 150px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar-nav {
+    margin-top: 0px;
+  }
+  .nav-icon {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline;
+  }
+  .nav-icon-left {
+    margin-left: 45px;
+    display: inline;
+  }
+  .nav-icon-bread {
+    display: none;
+  }
+  #cabanelf-huis {
+    width: 100vw;
+    height: 100vh;
+    top: 150px;
+  }
 }
