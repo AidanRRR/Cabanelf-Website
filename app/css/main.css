@@ -58,6 +58,9 @@ html {
   display: inline;
   padding: 10px; }
 
+.nav-icon-bread:hover {
+  text-decoration: none; }
+
 .socials-bread {
   margin-top: 30px; }
 
@@ -118,4 +121,5 @@ html {
   #cabanelf-huis {
     width: 100vw;
     height: 100vh;
-    top: 150px; } }
+    top: 150px;
+    z-index: 0; } }

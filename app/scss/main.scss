@@ -85,6 +85,10 @@ html {
   padding: 10px;
 }
 
+.nav-icon-bread:hover {
+  text-decoration: none;
+}
+
 .socials-bread {
   margin-top: 30px;
 }
@@ -164,5 +168,6 @@ html {
     width: 100vw;
     height: 100vh;
     top: 150px;
+    z-index: 0;
   }
 }
