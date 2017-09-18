@@ -1,3 +1,7 @@
+.no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
 .logo {
   margin-left: 0px;
   width: 75px; }
@@ -76,12 +80,29 @@ html {
   z-index: -1; }
 
 #cabanelf-huis-background {
-  background-color: #cdd6df; }
+  background-color: #cdd6df;
+  width: 100vw;
+  height: 25vw;
+  position: fixed;
+  z-index: -2; }
+
+.content-wrapper {
+  width: 80vw;
+  height: 650px;
+  margin-left: 10vw;
+  margin-top: 50px;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.8;
+  background: black; }
 
 @media only screen and (min-width: 300px) {
   #cabanelf-huis {
     width: 100vw;
-    height: 50vh; } }
+    height: 50vh; }
+  #cabanelf-huis-background {
+    width: 100vw;
+    height: 25vw; } }
 
 @media only screen and (min-width: 350px) {
   .logo {
@@ -91,7 +112,10 @@ html {
 @media only screen and (min-width: 600px) {
   #cabanelf-huis {
     width: 100vw;
-    height: 75vh; } }
+    height: 75vh; }
+  #cabanelf-huis-background {
+    width: 100vw;
+    height: 75vw; } }
 
 @media only screen and (min-width: 850px) {
   .logo {
@@ -104,7 +128,10 @@ html {
   #cabanelf-huis {
     width: 100vw;
     height: 100vh;
-    top: 150px; } }
+    top: 150px; }
+  #cabanelf-huis-background {
+    width: 100vw;
+    height: 100vw; } }
 
 @media only screen and (min-width: 992px) {
   .navbar-nav {
@@ -122,4 +149,7 @@ html {
     width: 100vw;
     height: 100vh;
     top: 150px;
-    z-index: 0; } }
+    z-index: 0; }
+  #cabanelf-huis-background {
+    width: 100vw;
+    height: 100vw; } }
