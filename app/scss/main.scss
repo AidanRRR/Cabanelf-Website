@@ -6,6 +6,11 @@ $cabanelf-2: rgba(252, 222, 190, 1);
 $cabanelf-3: rgba(212, 210, 165, 1);
 $navbar-bg: rgb(40, 40, 40);
 $cabanelf-huis-bg: rgb(205, 214, 223);
+$cabanelf-wit: #FFFFFF;
+p {
+  color: $cabanelf-wit;
+}
+
 // No padding
 .no-padding {
   padding-left: 0 !important;
@@ -107,17 +112,13 @@ html {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  position: fixed;
+  position: absolute;
   top: 150px;
   z-index: -1;
 }
 
-#cabanelf-huis-background {
+.cabanelf-huis-background {
   background-color: $cabanelf-huis-bg;
-  width: 100vw;
-  height: 25vw;
-  position: fixed;
-  z-index: -2;
 }
 
 .content-wrapper {
@@ -131,14 +132,16 @@ html {
   background: black;
 }
 
+.content-margin {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 2rem;
+}
+
 @media only screen and (min-width: 300px) {
   #cabanelf-huis {
     width: 100vw;
     height: 50vh;
-  }
-  #cabanelf-huis-background {
-    width: 100vw;
-    height: 25vw;
   }
 }
 
@@ -153,10 +156,6 @@ html {
   #cabanelf-huis {
     width: 100vw;
     height: 75vh;
-  }
-  #cabanelf-huis-background {
-    width: 100vw;
-    height: 75vw;
   }
 }
 
@@ -174,10 +173,6 @@ html {
     width: 100vw;
     height: 100vh;
     top: 150px;
-  }
-  #cabanelf-huis-background {
-    width: 100vw;
-    height: 100vw;
   }
 }
 
@@ -202,9 +197,5 @@ html {
     height: 100vh;
     top: 150px;
     z-index: 0;
-  }
-  #cabanelf-huis-background {
-    width: 100vw;
-    height: 100vw;
   }
 }
