@@ -1,3 +1,7 @@
+html {
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
 p {
   color: #FFFFFF; }
 
@@ -44,6 +48,15 @@ html {
   height: 50px;
   background: url("../images/border.png") repeat-x center;
   background-color: #cdd6df; }
+
+.navbar-seperator-bottom {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0vh;
+  z-index: 0;
+  background: url("../images/borderBottom.png") repeat-x center;
+  background-color: transparent; }
 
 .nav-link {
   display: inline; }
@@ -100,6 +113,16 @@ html {
   margin-right: 5rem;
   margin-top: 2rem; }
 
+.splashes-bottom-left {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1; }
+
+.splashes-bottom-right {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1; }
+
 @media only screen and (min-width: 300px) {
   #cabanelf-huis {
     width: 100vw;
@@ -142,6 +165,16 @@ html {
     display: none; }
   #cabanelf-huis {
     width: 100vw;
-    height: 100vh;
-    top: 150px;
-    z-index: 0; } }
+    height: calc(100vh-200px);
+    top: 200px;
+    z-index: 0; }
+  .splashes-bottom-left {
+    visibility: visible;
+    width: 563px;
+    left: 0;
+    bottom: 0; }
+  .splashes-bottom-right {
+    visibility: visible;
+    width: 563px;
+    right: 0;
+    bottom: 0; } }
