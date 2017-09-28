@@ -1,0 +1,83 @@
+.papierblok {
+    position: absolute;
+    max-width: 200px;
+    width: 75%;
+}
+
+.cabanelf-main {
+    position: absolute;
+    left: 0vw;
+    top: 0vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+@media only screen and (min-height: 450px) {
+    .papierblok {
+        max-width: 250px;
+    }
+}
+
+@media only screen and (min-height: 500px) {
+    .papierblok {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (min-height: 600px) {
+    .papierblok {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (min-height: 700px) {
+    .papierblok {
+        max-width: 500px;
+    }
+}
+
+@media only screen and (min-height: 800px) {
+    .papierblok {
+        max-width: 600px;
+    }
+    .cabanelf-main {
+        left: 30vw;
+        max-width: 80vw;
+    }
+}
+
+@media only screen and (min-height: 900px) {
+    .papierblok {
+        max-width: 700px;
+    }
+}
+
+@media only screen and (min-height: 1000px) {
+    .papierblok {
+        max-width: 800px;
+    }
+}
+
+@media only screen and (min-height: 1100px) {
+    .papierblok {
+        max-width: 900px;
+    }
+}
+
+@media only screen and (min-height: 1300px) {
+    .papierblok {
+        max-width: 1000px;
+    }
+}
+
+@media only screen and (min-height: 1400px) {
+    .papierblok {
+        max-width: 1100px;
+    }
+}
+
+@media only screen and (min-height: 1500px) {
+    .papierblok {
+        max-width: 1200px;
+    }
+}
