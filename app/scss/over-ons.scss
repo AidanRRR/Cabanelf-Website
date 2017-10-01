@@ -71,7 +71,8 @@
 @media only screen and (min-width: 520px) and (max-height: 600px) {
     .papierblok {
         content: url('../images/border-1-landscape.png');
-        width: 100%;
+        max-width: 500px;
+        width: 500px;
         height: 300px;
     }
     .tekst-papier-titel {
@@ -81,7 +82,7 @@
     }
     .tekst-papier-p {
         margin-left: 50px;
-        width: 300px;
+        width: 400px;
         height: 150px;
     }
 }
@@ -99,8 +100,27 @@
     }
     .tekst-papier-p {
         margin-left: 60px;
-        width: 300px;
+        width: 280px;
         height: 270px;
+    }
+}
+
+@media only screen and (min-width: 520px) and (max-height: 800px) {
+    .papierblok {
+        content: url('../images/border-1-landscape.png');
+        max-width: 700px;
+        width: 700px;
+        height: auto;
+    }
+    .tekst-papier-titel {
+        margin-top: 80px;
+        margin-bottom: 20px;
+        margin-left: 90px;
+    }
+    .tekst-papier-p {
+        margin-left: 90px;
+        width: 520px;
+        height: 185px;
     }
 }
 
@@ -109,81 +129,21 @@
         max-width: 550px;
         width: 550px;
         height: 550px;
+        margin-left: 50px;
+        margin-top: 20px;
     }
     .cabanelf-main {
         left: 30vw;
         max-width: 80vw;
     }
     .tekst-papier-titel {
-        margin-top: 45px;
+        margin-top: 90px;
         margin-bottom: 20px;
-        padding-top: 25px;
-        margin-left: 85px;
+        margin-left: 120px;
     }
     .tekst-papier-p {
-        margin-left: 85px;
-        width: 400px;
+        margin-left: 120px;
+        width: 405px;
         height: 350px;
-    }
-}
-
-@media only screen and (min-height: 900px) {
-    .papierblok {
-        max-width: 600px;
-        width: 600px;
-        height: 650px;
-    }
-    .tekst-papier-titel {
-        margin-top: 65px;
-        margin-bottom: 20px;
-        margin-left: 100px;
-    }
-    .tekst-papier-p {
-        margin-left: 100px;
-        width: 460px;
-        height: 550px;
-        overflow: hidden;
-    }
-}
-
-@media only screen and (min-height: 1000px) {
-    .papierblok {
-        content: url('../images/border1.png');
-        max-width: 800px;
-    }
-    .tekst-papier-titel {
-        margin-top: 95px;
-        margin-bottom: 20px;
-        margin-left: 140px;
-    }
-    .tekst-papier-p {
-        margin-left: 140px;
-        width: 500px;
-        height: 550px;
-        overflow: hidden;
-    }
-}
-
-@media only screen and (min-height: 1100px) {
-    .papierblok {
-        max-width: 900px;
-    }
-}
-
-@media only screen and (min-height: 1300px) {
-    .papierblok {
-        max-width: 1000px;
-    }
-}
-
-@media only screen and (min-height: 1400px) {
-    .papierblok {
-        max-width: 1100px;
-    }
-}
-
-@media only screen and (min-height: 1500px) {
-    .papierblok {
-        max-width: 1200px;
     }
 }
