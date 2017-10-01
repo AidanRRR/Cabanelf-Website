@@ -105,7 +105,7 @@
     }
 }
 
-@media only screen and (min-width: 520px) and (max-height: 800px) {
+@media only screen and (min-width: 520px) and (max-height: 700px) {
     .papierblok {
         content: url('../images/border-1-landscape.png');
         max-width: 700px;
@@ -124,7 +124,7 @@
     }
 }
 
-@media only screen and (min-height: 800px) {
+@media only screen and (min-height: 700px) {
     .papierblok {
         max-width: 550px;
         width: 550px;
