@@ -7,52 +7,58 @@
 }
 
 .papierblok {
+    content: url('../images/border-1-landscape.png');
     position: absolute;
     z-index: -1;
-    max-width: 200px;
+    max-width: 400px;
     width: 75%;
 }
 
 .tekst-papier-titel {
     font-family: 'Vollkorn', serif;
+    margin-top: 45px;
+    padding-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 50px;
 }
 
 .tekst-papier-p {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9rem;
     color: black;
+    margin-left: 50px;
+    width: 320px;
+    height: 80px;
 }
 
 @media only screen and (min-height: 450px) {
     .papierblok {
-        max-width: 250px;
+        max-width: 500px;
     }
     .tekst-papier-titel {
-        margin-top: 0px;
+        margin-top: 50px;
         margin-bottom: 20px;
-        padding-top: 25px;
-        margin-left: 30px;
+        margin-left: 60px;
     }
     .tekst-papier-p {
-        margin-left: 30px;
-        width: 200px;
-        height: 100px;
+        margin-left: 60px;
+        width: 400px;
+        height: 130px;
     }
 }
 
 @media only screen and (min-height: 500px) {
     .papierblok {
-        max-width: 300px;
+        max-width: 600px;
     }
     .tekst-papier-titel {
-        margin-top: 10px;
+        margin-top: 65px;
         margin-bottom: 20px;
-        padding-top: 25px;
-        margin-left: 40px;
+        margin-left: 70px;
     }
     .tekst-papier-p {
-        margin-left: 40px;
-        width: 250px;
+        margin-left: 70px;
+        width: 450px;
         height: 150px;
     }
 }
@@ -60,6 +66,7 @@
 @media only screen and (min-height: 600px) {
     .papierblok {
         max-width: 400px;
+        content: url('../images/border1.png');
     }
     .tekst-papier-titel {
         margin-top: 25px;
@@ -82,12 +89,12 @@
         margin-top: 25px;
         margin-bottom: 20px;
         padding-top: 25px;
-        margin-left: 50px;
+        margin-left: 70px;
     }
     .tekst-papier-p {
-        margin-left: 50px;
-        width: 320px;
-        height: 250px;
+        margin-left: 70px;
+        width: 350px;
+        height: 300px;
     }
 }
 
@@ -99,17 +106,51 @@
         left: 30vw;
         max-width: 80vw;
     }
+    .tekst-papier-titel {
+        margin-top: 45px;
+        margin-bottom: 20px;
+        padding-top: 25px;
+        margin-left: 85px;
+    }
+    .tekst-papier-p {
+        margin-left: 85px;
+        width: 400px;
+        height: 350px;
+    }
 }
 
 @media only screen and (min-height: 900px) {
     .papierblok {
         max-width: 700px;
     }
+    .tekst-papier-titel {
+        margin-top: 65px;
+        margin-bottom: 20px;
+        margin-left: 100px;
+    }
+    .tekst-papier-p {
+        margin-left: 100px;
+        width: 500px;
+        height: 550px;
+        overflow: hidden;
+    }
 }
 
 @media only screen and (min-height: 1000px) {
     .papierblok {
+        content: url('../images/border1.png');
         max-width: 800px;
+    }
+    .tekst-papier-titel {
+        margin-top: 95px;
+        margin-bottom: 20px;
+        margin-left: 140px;
+    }
+    .tekst-papier-p {
+        margin-left: 140px;
+        width: 500px;
+        height: 550px;
+        overflow: hidden;
     }
 }
 
