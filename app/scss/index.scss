@@ -1,0 +1,18 @@
+@import 'main.scss';
+.galerij {
+    background-color: $navbar-bg;
+    height: 90vh;
+    margin-top: -20px;
+}
+
+.galerij-foto {
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    filter: grayscale(100%);
+    transition: filter .5s ease-in-out;
+}
+
+.galerij-foto:hover {
+    filter: grayscale(0%);
+}
