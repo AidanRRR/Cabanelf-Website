@@ -27,6 +27,7 @@
     font-size: 0.9rem;
     color: black;
     margin-left: 50px;
+    padding-right: 5px;
     width: 320px;
     height: 80px;
 }
@@ -175,5 +176,21 @@
 @media only screen and (min-height: 1500px) {
     .papierblok {
         max-width: 1200px;
+    }
+}
+
+@media only screen and (min-height: 600px) and (min-width: 1200px) {
+    .papierblok {
+        max-width: 600px;
+    }
+    .tekst-papier-titel {
+        margin-top: 60px;
+        margin-bottom: 20px;
+        margin-left: 80px;
+    }
+    .tekst-papier-p {
+        margin-left: 80px;
+        width: 430px;
+        height: 400px;
     }
 }
