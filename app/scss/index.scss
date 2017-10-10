@@ -6,8 +6,9 @@
 }
 
 .galerij-foto {
-    width: 100%;
+    width: 50%;
     height: 100%;
+    margin-left: 25%;
     padding-top: 30px;
     filter: grayscale(100%);
     transition: filter .5s ease-in-out;
