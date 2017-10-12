@@ -18,6 +18,9 @@
 
     <!-- Main style -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/papierblok.css">
+    <link rel="stylesheet" href="css/route.css">
+
 </head>
 
 <body class="cabanelf-huis-background">
@@ -26,7 +29,7 @@
     <nav class="navbar navbar-toggleable-md navbar-gray navbar-inverse bg-faded">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="index.html">
             <img src="images/cabanelfLogo.png" width="100" class="d-inline-block align-top logo" alt="">
@@ -66,24 +69,15 @@
     <div class="navbar-seperator"></div>
 
     <section>
-        <!-- Cabanelf huis -->
-        <div id="cabanelf-huis"></div>
+        <div class="row">
+            <div class="col-lg-12 small-screen">
+                <img class="papierblok" src="images/border1.png">
+            </div>
+        </div>
     </section>
 
     <section>
-        <div class="content-wrapper">
-            <div class="content-margin">
-                <h1>Route</h1>
-                <p>Eind vorige eeuw zijn wij gestart met La Cabane. Zonder al te grote ambities, gewoon ons ding doen met lekker
-                    eten en een goed glas wijn. Dit was vanaf het begin van cruciaal belang. Al snel werden wij opgemerkt
-                    door de culinaire gidsen met een Michelinster en een fraaie 16/20 bij Gault Millau tot gevolg. Wij waren
-                    natuurlijk opgetogen met al deze lof. Maar wij beseften dat ons ding doen onder druk kwam te staan. Vooral
-                    de creativiteit in de keuken leed daar enorm onder met een identiteitscrisis tot gevolg. Wij besloten
-                    om van nul te beginnen en trouw te blijven aan onze stijl ! Et voilà in 2007 was er dan Cabanelf en is
-                    het restaurant in goede doen. Nu kunnen wij voor de volle 100% ons ding doen tot grote tevredenheid van
-                    onze gasten. Komen eten bij ons is altijd een beetje op avontuur trekken.</p>
-            </div>
-        </div>
+        <iframe class="googlemaps" src="https://snazzymaps.com/embed/21786" style="border:none;"></iframe>
     </section>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
@@ -93,6 +87,10 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
+
+    <!-- Include the Google Maps API library - required for embedding maps -->
+    <!-- <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+
 </body>
 
 </html>

@@ -1,33 +1,154 @@
+html {
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+p {
+  color: #FFFFFF; }
+
+.no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.logo {
+  margin-left: 0px;
+  width: 75px; }
+
+h1 {
+  color: #7f1a00;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 60px;
+  margin-bottom: 45px; }
+
+h2 {
+  color: #de7a1c; }
+
+p {
+  font-family: 'Poppins', sans-serif; }
+
+html {
+  height: 100%; }
+
 .cabanelf-main {
   position: absolute;
-  left: 0vw;
-  top: 0vh;
-  width: 100vw;
-  z-index: -1; }
+  left: 5vw;
+  top: 5vh;
+  width: 130vw;
+  z-index: 1; }
 
-.papierblok {
-  content: url("../images/border-1-landscape.png");
-  position: absolute;
-  z-index: -1;
-  min-width: 350px;
-  max-width: 400px; }
+.cabanelf-huis-background {
+  background-color: #cdd6df; }
 
-.tekst-papier-titel {
-  font-family: 'Vollkorn', serif;
-  margin-top: 45px;
-  padding-top: 0px;
-  margin-bottom: 20px;
-  margin-left: 50px; }
+.navbar-nav {
+  padding-right: 75px;
+  margin-top: 30px; }
 
-.tekst-papier-p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.9rem;
-  color: black;
-  margin-left: 50px;
-  padding-right: 5px;
-  width: 250px;
+.navbar-gray {
+  padding-top: 2rem !important;
+  background-color: #282828; }
+
+.navbar-gray a {
+  font-size: 1.2rem;
+  color: #CCCCCC; }
+
+.navbar-gray a:hover {
+  color: white; }
+
+.navbar-seperator {
+  width: 100%;
   height: 50px;
-  overflow-y: scroll; }
+  background: url("../images/border.png") repeat-x center;
+  background-color: transparent; }
+
+.navbar-seperator-bottom {
+  width: 100%;
+  height: 92px;
+  position: fixed;
+  bottom: 0px;
+  z-index: 0;
+  background: url("../images/borderBottom.png") repeat-x center;
+  background-color: transparent; }
+
+.nav-link {
+  display: inline; }
+
+.nav-item {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.nav-icon {
+  display: none; }
+
+.nav-icon:hover {
+  text-decoration: none; }
+
+.nav-icon-left {
+  display: none; }
+
+.nav-icon-bread {
+  display: inline;
+  padding: 10px; }
+
+.nav-icon-bread:hover {
+  text-decoration: none; }
+
+.socials-bread {
+  margin-top: 30px; }
+
+.content-wrapper {
+  width: 80vw;
+  height: 650px;
+  margin-left: 10vw;
+  margin-top: 50px;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.8;
+  background: black; }
+
+.content-margin {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 2rem; }
+
+.scrollbar-papier::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5; }
+
+.scrollbar-papier::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5; }
+
+.scrollbar-papier::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555; }
+
+@media only screen and (min-width: 350px) {
+  .logo {
+    margin-left: 25px;
+    width: 125px; } }
+
+@media only screen and (min-width: 850px) {
+  .logo {
+    margin-left: 50px;
+    width: 150px; }
+  .navbar-gray {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    background-color: #282828; } }
+
+@media only screen and (min-width: 992px) {
+  .navbar-nav {
+    margin-top: 0px; }
+  .nav-icon {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline; }
+  .nav-icon-left {
+    margin-left: 45px;
+    display: inline; }
+  .nav-icon-bread {
+    display: none; } }
 
 .cabanelf-overons-background {
   background: url("../images/fotos/lucdirk.jpg") no-repeat;
@@ -35,113 +156,3 @@
   background-size: cover;
   background-position-y: 180px;
   background-position-x: 250px; }
-
-@media only screen and (min-height: 380px) {
-  .papierblok {
-    content: url("../images/border1.png");
-    width: 300px;
-    height: 250px; }
-  .tekst-papier-titel {
-    margin-top: 50px;
-    margin-bottom: 20px;
-    margin-left: 50px; }
-  .tekst-papier-p {
-    margin-left: 50px;
-    width: 250px;
-    height: 130px; } }
-
-@media only screen and (min-height: 500px) {
-  .papierblok {
-    content: url("../images/border1.png");
-    width: 300px;
-    height: auto; }
-  .tekst-papier-titel {
-    margin-top: 50px;
-    margin-bottom: 20px;
-    margin-left: 50px; }
-  .tekst-papier-p {
-    margin-left: 50px;
-    width: 250px;
-    height: 200px; } }
-
-@media only screen and (min-width: 520px) and (max-height: 600px) {
-  .papierblok {
-    content: url("../images/border-1-landscape.png");
-    max-width: 500px;
-    width: 500px;
-    height: 300px; }
-  .tekst-papier-titel {
-    margin-top: 50px;
-    margin-bottom: 20px;
-    margin-left: 50px; }
-  .tekst-papier-p {
-    margin-left: 50px;
-    width: 400px;
-    height: 150px; } }
-
-@media only screen and (min-height: 600px) {
-  .papierblok {
-    content: url("../images/border1.png");
-    width: 360px;
-    height: 450px; }
-  .tekst-papier-titel {
-    margin-top: 60px;
-    margin-bottom: 20px;
-    margin-left: 60px; }
-  .tekst-papier-p {
-    margin-left: 60px;
-    width: 280px;
-    height: 270px; } }
-
-@media only screen and (min-width: 520px) and (max-height: 700px) {
-  .papierblok {
-    content: url("../images/border-1-landscape.png");
-    max-width: 700px;
-    width: 700px;
-    height: auto; }
-  .tekst-papier-titel {
-    margin-top: 80px;
-    margin-bottom: 20px;
-    margin-left: 90px; }
-  .tekst-papier-p {
-    margin-left: 90px;
-    width: 520px;
-    height: 185px; } }
-
-@media only screen and (min-height: 700px) {
-  .papierblok {
-    max-width: 550px;
-    width: 550px;
-    height: 550px;
-    margin-left: 50px;
-    margin-top: 20px; }
-  .cabanelf-main {
-    left: 30vw;
-    max-width: 80vw; }
-  .tekst-papier-titel {
-    margin-top: 90px;
-    margin-bottom: 20px;
-    margin-left: 120px; }
-  .tekst-papier-p {
-    margin-left: 120px;
-    width: 405px;
-    height: 350px; } }
-
-@media only screen and (min-height: 700px) and (min-width: 1200px) {
-  .papierblok {
-    max-width: 650px;
-    width: 650px;
-    height: 650px;
-    margin-left: 75px;
-    margin-top: 50px; }
-  .cabanelf-main {
-    left: 30vw;
-    max-width: 80vw; }
-  .tekst-papier-titel {
-    margin-top: 140px;
-    margin-bottom: 20px;
-    margin-left: 170px; }
-  .tekst-papier-p {
-    margin-left: 170px;
-    width: 490px;
-    height: 400px; } }
