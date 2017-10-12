@@ -109,12 +109,6 @@ html {
   margin-right: 5rem;
   margin-top: 2rem; }
 
-.cabanelf-overons-background {
-  background: url("../images/fotos/lucdirk.jpg");
-  background-size: cover;
-  background-position-y: 200px;
-  background-position-x: 250px; }
-
 .scrollbar-papier::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;

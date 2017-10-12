@@ -29,6 +29,13 @@
   height: 50px;
   overflow-y: scroll; }
 
+.cabanelf-overons-background {
+  background: url("../images/fotos/lucdirk.jpg") no-repeat;
+  background-color: black;
+  background-size: cover;
+  background-position-y: 180px;
+  background-position-x: 250px; }
+
 @media only screen and (min-height: 380px) {
   .papierblok {
     content: url("../images/border1.png");
@@ -119,3 +126,22 @@
     margin-left: 120px;
     width: 405px;
     height: 350px; } }
+
+@media only screen and (min-height: 700px) and (min-width: 1200px) {
+  .papierblok {
+    max-width: 650px;
+    width: 650px;
+    height: 650px;
+    margin-left: 75px;
+    margin-top: 50px; }
+  .cabanelf-main {
+    left: 30vw;
+    max-width: 80vw; }
+  .tekst-papier-titel {
+    margin-top: 140px;
+    margin-bottom: 20px;
+    margin-left: 170px; }
+  .tekst-papier-p {
+    margin-left: 170px;
+    width: 490px;
+    height: 400px; } }
