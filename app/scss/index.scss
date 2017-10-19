@@ -22,3 +22,86 @@
     width: 150px;
     height: 150px;
 }
+
+.grayscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 1s ease;
+}
+
+.nav-pic-container {
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+}
+
+.nav-pic {
+    @extend .grayscale;
+    position: fixed;
+    width: $nav-pic-size;
+    height: 70px;
+    bottom: 0;
+    background-size: contain;
+    z-index: 5;
+}
+
+.nav-pic:hover {
+    filter: grayscale(0%);
+}
+
+.nav-pic-1 {
+    @extend .nav-pic;
+    left: 0;
+    background-image: url('../images/fotos/nav-pic-1.jpg');
+    z-index: 1;
+}
+
+.nav-pic-2 {
+    @extend .nav-pic;
+    left: $nav-pic-size;
+    background-image: url('../images/fotos/nav-pic-2.jpg');
+}
+
+.nav-pic-1:hover+.background-picture-1 {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s linear;
+    filter: grayscale(0%);
+}
+
+.nav-pic-2:hover+.background-picture-2 {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s linear;
+    filter: grayscale(0%);
+}
+
+.nav-pic-3 {
+    @extend .nav-pic;
+    left: $nav-pic-size*2;
+    background-image: url('../images/fotos/nav-pic-3.jpg');
+}
+
+.background-picture {
+    @extend .grayscale;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin-top: -20px;
+    opacity: 0;
+    z-index: -5;
+}
+
+.background-picture-1 {
+    @extend .background-picture;
+    background: url('../images/fotos/nav-pic-1.jpg') no-repeat;
+    background-size: cover;
+    visibility: hidden;
+}
+
+.background-picture-2 {
+    @extend .background-picture;
+    background: url('../images/fotos/nav-pic-2.jpg') no-repeat;
+    background-size: cover;
+    visibility: hidden;
+}
