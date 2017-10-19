@@ -164,6 +164,11 @@ html {
   margin-bottom: 20px;
   margin-left: 50px; }
 
+.tekst-papier-subtitel {
+  font-family: 'Vollkorn', serif;
+  margin-left: 50px;
+  margin-bottom: 20px; }
+
 .tekst-papier-p {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.9rem;
@@ -171,7 +176,7 @@ html {
   margin-left: 50px;
   padding-right: 5px;
   width: 250px;
-  height: 50px;
+  max-height: 50px;
   overflow-y: scroll; }
 
 @media only screen and (min-height: 380px) {
@@ -183,10 +188,13 @@ html {
     margin-top: 50px;
     margin-bottom: 20px;
     margin-left: 50px; }
+  .tekst-papier-subtitel {
+    font-family: 'Vollkorn', serif;
+    margin-left: 50px; }
   .tekst-papier-p {
     margin-left: 50px;
     width: 250px;
-    height: 130px; } }
+    max-height: 130px; } }
 
 @media only screen and (min-height: 500px) {
   .papierblok {
@@ -197,10 +205,13 @@ html {
     margin-top: 50px;
     margin-bottom: 20px;
     margin-left: 50px; }
+  .tekst-papier-subtitel {
+    font-family: 'Vollkorn', serif;
+    margin-left: 50px; }
   .tekst-papier-p {
     margin-left: 50px;
     width: 250px;
-    height: 200px; } }
+    max-height: 200px; } }
 
 @media only screen and (min-width: 520px) and (max-height: 600px) {
   .papierblok {
@@ -212,10 +223,13 @@ html {
     margin-top: 50px;
     margin-bottom: 20px;
     margin-left: 50px; }
+  .tekst-papier-subtitel {
+    font-family: 'Vollkorn', serif;
+    margin-left: 50px; }
   .tekst-papier-p {
     margin-left: 50px;
     width: 400px;
-    height: 150px; } }
+    max-height: 150px; } }
 
 @media only screen and (min-height: 600px) {
   .papierblok {
@@ -226,10 +240,13 @@ html {
     margin-top: 60px;
     margin-bottom: 20px;
     margin-left: 60px; }
+  .tekst-papier-subtitel {
+    font-family: 'Vollkorn', serif;
+    margin-left: 60px; }
   .tekst-papier-p {
     margin-left: 60px;
     width: 280px;
-    height: 270px; } }
+    max-height: 270px; } }
 
 @media only screen and (min-width: 520px) and (max-height: 700px) {
   .papierblok {
@@ -241,10 +258,13 @@ html {
     margin-top: 80px;
     margin-bottom: 20px;
     margin-left: 90px; }
+  .tekst-papier-subtitel {
+    font-family: 'Vollkorn', serif;
+    margin-left: 90px; }
   .tekst-papier-p {
     margin-left: 90px;
     width: 520px;
-    height: 185px; } }
+    max-height: 185px; } }
 
 @media only screen and (min-height: 700px) {
   .papierblok {
@@ -260,10 +280,13 @@ html {
     margin-top: 90px;
     margin-bottom: 20px;
     margin-left: 120px; }
+  .tekst-papier-subtitel {
+    font-family: 'Vollkorn', serif;
+    margin-left: 120px; }
   .tekst-papier-p {
     margin-left: 120px;
     width: 405px;
-    height: 350px; } }
+    max-height: 350px; } }
 
 @media only screen and (min-height: 700px) and (min-width: 1200px) {
   .papierblok {
@@ -279,7 +302,10 @@ html {
     margin-top: 140px;
     margin-bottom: 20px;
     margin-left: 170px; }
+  .tekst-papier-subtitel {
+    font-family: 'Vollkorn', serif;
+    margin-left: 170px; }
   .tekst-papier-p {
     margin-left: 170px;
     width: 490px;
-    height: 400px; } }
+    max-height: 400px; } }
