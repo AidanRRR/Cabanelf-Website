@@ -33,7 +33,19 @@ html {
   left: 5vw;
   top: 5vh;
   width: 130vw;
-  z-index: 1; }
+  z-index: 1;
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -ms-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  opacity: 1; }
+
+.cabanelf-main-hide {
+  -webkit-transition: opacity 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in;
+  -ms-transition: opacity 0.5s ease-in;
+  -o-transition: opacity 0.5s ease-in;
+  opacity: 0; }
 
 .cabanelf-huis-background {
   background-color: #cdd6df; }
@@ -170,15 +182,20 @@ html {
   width: 150px;
   height: 150px; }
 
-.grayscale, .nav-pic, .nav-pic-1, .nav-pic-2, .nav-pic-3, .background-picture, .background-picture-1, .background-picture-2 {
+.grayscale, .nav-pic, .nav-pic-1, .nav-pic-2, .nav-pic-3, .background-picture, .background-picture-1, .background-picture-2, .background-picture-3 {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: all 1s ease; }
 
 .nav-pic-container {
-  width: 200px;
-  height: 50px;
-  background-color: orange; }
+  visibility: visible;
+  position: fixed;
+  width: 425px;
+  height: 125px;
+  bottom: 0;
+  background-color: orange;
+  z-index: 2;
+  pointer-events: hover; }
 
 .nav-pic, .nav-pic-1, .nav-pic-2, .nav-pic-3 {
   position: fixed;
@@ -186,7 +203,7 @@ html {
   height: 70px;
   bottom: 0;
   background-size: contain;
-  z-index: 5; }
+  z-index: 1; }
 
 .nav-pic:hover, .nav-pic-1:hover, .nav-pic-2:hover, .nav-pic-3:hover {
   filter: grayscale(0%); }
@@ -200,6 +217,10 @@ html {
   left: 120px;
   background-image: url("../images/fotos/nav-pic-2.jpg"); }
 
+.nav-pic-3 {
+  left: 240px;
+  background-image: url("../images/fotos/nav-pic-3.jpg"); }
+
 .nav-pic-1:hover + .background-picture-1 {
   visibility: visible;
   opacity: 1;
@@ -212,15 +233,17 @@ html {
   transition: opacity 1s linear;
   filter: grayscale(0%); }
 
-.nav-pic-3 {
-  left: 240px;
-  background-image: url("../images/fotos/nav-pic-3.jpg"); }
+.nav-pic-3:hover + .background-picture-3 {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
+  filter: grayscale(0%); }
 
-.background-picture, .background-picture-1, .background-picture-2 {
+.background-picture, .background-picture-1, .background-picture-2, .background-picture-3 {
   position: absolute;
+  top: 0;
   width: 100vw;
   height: 100vh;
-  margin-top: -20px;
   opacity: 0;
   z-index: -5; }
 
@@ -231,5 +254,10 @@ html {
 
 .background-picture-2 {
   background: url("../images/fotos/nav-pic-2.jpg") no-repeat;
+  background-size: cover;
+  visibility: hidden; }
+
+.background-picture-3 {
+  background: url("../images/fotos/nav-pic-3.jpg") no-repeat;
   background-size: cover;
   visibility: hidden; }

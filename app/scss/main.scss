@@ -55,6 +55,19 @@ html {
   top: 5vh;
   width: 130vw;
   z-index: 1;
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -ms-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  opacity: 1;
+}
+
+.cabanelf-main-hide {
+  -webkit-transition: opacity 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in;
+  -ms-transition: opacity 0.5s ease-in;
+  -o-transition: opacity 0.5s ease-in;
+  opacity: 0;
 }
 
 .cabanelf-huis-background {

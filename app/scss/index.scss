@@ -30,9 +30,14 @@
 }
 
 .nav-pic-container {
-    width: 200px;
-    height: 50px;
+    visibility: visible;
+    position: fixed;
+    width: 425px;
+    height: 125px;
+    bottom: 0;
     background-color: orange;
+    z-index: 2;
+    pointer-events: hover;
 }
 
 .nav-pic {
@@ -42,7 +47,7 @@
     height: 70px;
     bottom: 0;
     background-size: contain;
-    z-index: 5;
+    z-index: 1;
 }
 
 .nav-pic:hover {
@@ -62,6 +67,12 @@
     background-image: url('../images/fotos/nav-pic-2.jpg');
 }
 
+.nav-pic-3 {
+    @extend .nav-pic;
+    left: $nav-pic-size*2;
+    background-image: url('../images/fotos/nav-pic-3.jpg');
+}
+
 .nav-pic-1:hover+.background-picture-1 {
     visibility: visible;
     opacity: 1;
@@ -76,18 +87,19 @@
     filter: grayscale(0%);
 }
 
-.nav-pic-3 {
-    @extend .nav-pic;
-    left: $nav-pic-size*2;
-    background-image: url('../images/fotos/nav-pic-3.jpg');
+.nav-pic-3:hover+.background-picture-3 {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s linear;
+    filter: grayscale(0%);
 }
 
 .background-picture {
     @extend .grayscale;
     position: absolute;
+    top: 0;
     width: 100vw;
-    height: 100vh;
-    margin-top: -20px;
+    height: 100vh; //margin-top: -20px;
     opacity: 0;
     z-index: -5;
 }
@@ -102,6 +114,13 @@
 .background-picture-2 {
     @extend .background-picture;
     background: url('../images/fotos/nav-pic-2.jpg') no-repeat;
+    background-size: cover;
+    visibility: hidden;
+}
+
+.background-picture-3 {
+    @extend .background-picture;
+    background: url('../images/fotos/nav-pic-3.jpg') no-repeat;
     background-size: cover;
     visibility: hidden;
 }
