@@ -68,24 +68,7 @@ html {
 @media only screen and (min-width: 850px) {
   .logo {
     margin-left: 50px;
-    width: 150px; }
-  .navbar-gray {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-    background-color: #282828; } }
-
-@media only screen and (min-width: 992px) {
-  .navbar-nav {
-    margin-top: 0px; }
-  .nav-icon {
-    margin-left: 15px;
-    margin-right: 15px;
-    display: inline; }
-  .nav-icon-left {
-    margin-left: 45px;
-    display: inline; }
-  .nav-icon-bread {
-    display: none; } }
+    width: 150px; } }
 
 .cabanelf-overons-background {
   background: url("../images/fotos/champions.jpg") no-repeat;

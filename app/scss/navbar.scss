@@ -21,7 +21,7 @@
 .navbar-seperator {
     width: 100%;
     height: 50px;
-    background: url('../images/border.png') repeat-x center; //background-color: $cabanelf-huis-bg;
+    background: url('../images/border.png') repeat-x center;
     background-color: transparent;
 }
 
@@ -69,5 +69,30 @@
 @media only screen and (min-width: 600px) {
     .navbar-seperator-bottom {
         display: inline;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .logo {
+        margin-left: 50px;
+        width: 150px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar-nav {
+        margin-top: 0px;
+    }
+    .nav-icon {
+        margin-left: 15px;
+        margin-right: 15px;
+        display: inline;
+    }
+    .nav-icon-left {
+        margin-left: 45px;
+        display: inline;
+    }
+    .nav-icon-bread {
+        display: none;
     }
 }
