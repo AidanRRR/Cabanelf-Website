@@ -1,32 +1,28 @@
 @import 'main.scss';
-.galerij {
-    background-color: $navbar-bg;
-    height: 90vh;
-    margin-top: -20px;
+@import 'effects.scss';
+.cabanelf-main {
+    position: absolute;
+    left: 10vw;
+    top: 0vh;
+    width: 130vw;
+    z-index: 1;
+    -webkit-transition: opacity 0.5s ease-out;
+    -moz-transition: opacity 0.5s ease-out;
+    -ms-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+    opacity: 1;
 }
 
-.galerij-foto {
-    width: 50%;
-    height: 100%;
-    margin-left: 25%;
-    padding-top: 30px;
-    filter: grayscale(100%);
-    transition: filter .5s ease-in-out;
+.cabanelf-main-hide {
+    -webkit-transition: opacity 0.5s ease-in;
+    -moz-transition: opacity 0.5s ease-in;
+    -ms-transition: opacity 0.5s ease-in;
+    -o-transition: opacity 0.5s ease-in;
+    opacity: 0;
 }
 
-.galerij-foto:hover {
-    filter: grayscale(0%);
-}
-
-.foto-menu {
-    width: 150px;
-    height: 150px;
-}
-
-.grayscale {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transition: all 1s ease;
+.cabanelf-huis-background {
+    background-color: $cabanelf-huis-bg;
 }
 
 .nav-pic-container {
@@ -42,6 +38,7 @@
 
 .nav-pic {
     @extend .grayscale;
+    display: none;
     position: fixed;
     width: $nav-pic-size;
     height: 70px;
@@ -123,4 +120,10 @@
     background: url('../images/fotos/nav-pic-3.jpg') no-repeat;
     background-size: cover;
     visibility: hidden;
+}
+
+@media only screen and (min-width: 600px) {
+    .nav-pic {
+        display: inline;
+    }
 }

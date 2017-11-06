@@ -1,0 +1,73 @@
+@import 'main.scss';
+.navbar-nav {
+    padding-right: 75px;
+    margin-top: 30px;
+}
+
+.navbar-gray {
+    padding-top: 2rem!important;
+    background-color: $navbar-bg;
+}
+
+.navbar-gray a {
+    font-size: 1.2rem;
+    color: #CCCCCC;
+}
+
+.navbar-gray a:hover {
+    color: white;
+}
+
+.navbar-seperator {
+    width: 100%;
+    height: 50px;
+    background: url('../images/border.png') repeat-x center; //background-color: $cabanelf-huis-bg;
+    background-color: transparent;
+}
+
+.navbar-seperator-bottom {
+    display: none;
+    width: 100%;
+    height: 92px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 0;
+    background: url('../images/borderBottom.png') repeat-x center;
+    background-color: transparent;
+}
+
+.nav-link {
+    display: inline;
+}
+
+.nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-icon {
+    display: none;
+}
+
+.nav-icon:hover {
+    text-decoration: none;
+}
+
+.nav-icon-left {
+    display: none;
+}
+
+.nav-icon-bread {
+    display: inline;
+    padding: 10px;
+}
+
+.nav-icon-bread:hover {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar-seperator-bottom {
+        display: inline;
+    }
+}

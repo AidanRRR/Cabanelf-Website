@@ -28,81 +28,6 @@ p {
 html {
   height: 100%; }
 
-.cabanelf-main {
-  position: absolute;
-  left: 5vw;
-  top: 5vh;
-  width: 130vw;
-  z-index: 1;
-  -webkit-transition: opacity 0.5s ease-out;
-  -moz-transition: opacity 0.5s ease-out;
-  -ms-transition: opacity 0.5s ease-out;
-  -o-transition: opacity 0.5s ease-out;
-  opacity: 1; }
-
-.cabanelf-main-hide {
-  -webkit-transition: opacity 0.5s ease-in;
-  -moz-transition: opacity 0.5s ease-in;
-  -ms-transition: opacity 0.5s ease-in;
-  -o-transition: opacity 0.5s ease-in;
-  opacity: 0; }
-
-.cabanelf-huis-background {
-  background-color: #cdd6df; }
-
-.navbar-nav {
-  padding-right: 75px;
-  margin-top: 30px; }
-
-.navbar-gray {
-  padding-top: 2rem !important;
-  background-color: #282828; }
-
-.navbar-gray a {
-  font-size: 1.2rem;
-  color: #CCCCCC; }
-
-.navbar-gray a:hover {
-  color: white; }
-
-.navbar-seperator {
-  width: 100%;
-  height: 50px;
-  background: url("../images/border.png") repeat-x center;
-  background-color: transparent; }
-
-.navbar-seperator-bottom {
-  width: 100%;
-  height: 92px;
-  position: fixed;
-  bottom: 0px;
-  z-index: 0;
-  background: url("../images/borderBottom.png") repeat-x center;
-  background-color: transparent; }
-
-.nav-link {
-  display: inline; }
-
-.nav-item {
-  margin-left: 10px;
-  margin-right: 10px; }
-
-.nav-icon {
-  display: none; }
-
-.nav-icon:hover {
-  text-decoration: none; }
-
-.nav-icon-left {
-  display: none; }
-
-.nav-icon-bread {
-  display: inline;
-  padding: 10px; }
-
-.nav-icon-bread:hover {
-  text-decoration: none; }
-
 .socials-bread {
   margin-top: 30px; }
 
@@ -162,30 +87,32 @@ html {
   .nav-icon-bread {
     display: none; } }
 
-.galerij {
-  background-color: #282828;
-  height: 90vh;
-  margin-top: -20px; }
-
-.galerij-foto {
-  width: 50%;
-  height: 100%;
-  margin-left: 25%;
-  padding-top: 30px;
-  filter: grayscale(100%);
-  transition: filter .5s ease-in-out; }
-
-.galerij-foto:hover {
-  filter: grayscale(0%); }
-
-.foto-menu {
-  width: 150px;
-  height: 150px; }
-
 .grayscale, .nav-pic, .nav-pic-1, .nav-pic-2, .nav-pic-3, .background-picture, .background-picture-1, .background-picture-2, .background-picture-3 {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: all 1s ease; }
+
+.cabanelf-main {
+  position: absolute;
+  left: 10vw;
+  top: 0vh;
+  width: 130vw;
+  z-index: 1;
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -ms-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  opacity: 1; }
+
+.cabanelf-main-hide {
+  -webkit-transition: opacity 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in;
+  -ms-transition: opacity 0.5s ease-in;
+  -o-transition: opacity 0.5s ease-in;
+  opacity: 0; }
+
+.cabanelf-huis-background {
+  background-color: #cdd6df; }
 
 .nav-pic-container {
   visibility: visible;
@@ -198,6 +125,7 @@ html {
   pointer-events: hover; }
 
 .nav-pic, .nav-pic-1, .nav-pic-2, .nav-pic-3 {
+  display: none;
   position: fixed;
   width: 120px;
   height: 70px;
@@ -261,3 +189,7 @@ html {
   background: url("../images/fotos/nav-pic-3.jpg") no-repeat;
   background-size: cover;
   visibility: hidden; }
+
+@media only screen and (min-width: 600px) {
+  .nav-pic, .nav-pic-1, .nav-pic-2, .nav-pic-3 {
+    display: inline; } }
