@@ -1,202 +1,203 @@
 @import 'main.scss';
 .papierblok {
-    content: url('../images/border-1-landscape.png');
-    position: absolute;
-    z-index: -1;
-    min-width: 350px;
-    max-width: 400px; // width: 100%;
+  content: url('../images/border-1-landscape.png');
+  position: absolute;
+  z-index: -1;
+  min-width: 350px;
+  max-width: 400px; // width: 100%;
 }
 
 .tekst-papier-titel {
-    font-family: 'Vollkorn', serif;
-    margin-top: 45px;
-    padding-top: 0px;
-    margin-bottom: 20px;
-    margin-left: 50px;
+  font-family: 'Vollkorn', serif;
+  margin-top: 45px;
+  padding-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 50px;
 }
 
 .tekst-papier-subtitel {
-    font-family: 'Vollkorn', serif;
-    margin-left: 50px;
-    margin-bottom: 20px;
-    max-width: 400px;
+  font-family: 'Vollkorn', serif;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  max-width: 400px;
 }
 
 .tekst-papier-p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.9rem;
-    color: black;
-    margin-left: 50px;
-    padding-right: 5px;
-    width: 250px;
-    max-height: 50px;
-    overflow-y: scroll;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  color: black;
+  margin-left: 50px;
+  padding-right: 5px;
+  width: 250px;
+  max-height: 50px;
+  overflow-y: scroll;
 }
 
 @media only screen and (min-height: 380px) {
-    .papierblok {
-        content: url('../images/border1.png');
-        width: 300px;
-        height: 250px;
-    }
-    .tekst-papier-titel {
-        margin-top: 50px;
-        margin-bottom: 20px;
-        margin-left: 50px;
-    }
-    .tekst-papier-subtitel {
-        font-family: 'Vollkorn', serif;
-        margin-left: 50px;
-    }
-    .tekst-papier-p {
-        margin-left: 50px;
-        width: 250px;
-        max-height: 130px;
-    }
+  .papierblok {
+    content: url('../images/border1.png');
+    width: 300px;
+    height: 250px;
+  }
+  .tekst-papier-titel {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+  .tekst-papier-subtitel {
+    font-family: 'Vollkorn', serif;
+    margin-left: 50px;
+  }
+  .tekst-papier-p {
+    margin-left: 50px;
+    width: 250px;
+    max-height: 130px;
+  }
 }
 
 @media only screen and (min-height: 500px) {
-    .papierblok {
-        content: url('../images/border1.png');
-        width: 300px;
-        height: auto;
-    }
-    .tekst-papier-titel {
-        margin-top: 50px;
-        margin-bottom: 20px;
-        margin-left: 50px;
-    }
-    .tekst-papier-subtitel {
-        font-family: 'Vollkorn', serif;
-        margin-left: 50px;
-    }
-    .tekst-papier-p {
-        margin-left: 50px;
-        width: 250px;
-        max-height: 200px;
-    }
+  .papierblok {
+    content: url('../images/border1.png');
+    width: 300px;
+    height: auto;
+  }
+  .tekst-papier-titel {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+  .tekst-papier-subtitel {
+    font-family: 'Vollkorn', serif;
+    margin-left: 50px;
+  }
+  .tekst-papier-p {
+    margin-left: 50px;
+    width: 250px;
+    max-height: 200px;
+  }
 }
 
 @media only screen and (min-width: 520px) and (max-height: 600px) {
-    .papierblok {
-        content: url('../images/border-1-landscape.png');
-        max-width: 500px;
-        width: 500px;
-        height: 300px;
-    }
-    .tekst-papier-titel {
-        margin-top: 50px;
-        margin-bottom: 20px;
-        margin-left: 50px;
-    }
-    .tekst-papier-subtitel {
-        font-family: 'Vollkorn', serif;
-        margin-left: 50px;
-    }
-    .tekst-papier-p {
-        margin-left: 50px;
-        width: 400px;
-        max-height: 150px;
-    }
+  .papierblok {
+    content: url('../images/border-1-landscape.png');
+    max-width: 500px;
+    width: 500px;
+    height: 300px;
+  }
+  .tekst-papier-titel {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+  .tekst-papier-subtitel {
+    font-family: 'Vollkorn', serif;
+    margin-left: 50px;
+  }
+  .tekst-papier-p {
+    margin-left: 50px;
+    width: 400px;
+    max-height: 150px;
+  }
 }
 
 @media only screen and (min-height: 600px) {
-    .papierblok {
-        content: url('../images/border1.png');
-        width: 360px;
-        height: 450px;
-    }
-    .tekst-papier-titel {
-        margin-top: 60px;
-        margin-bottom: 20px;
-        margin-left: 60px;
-    }
-    .tekst-papier-subtitel {
-        font-family: 'Vollkorn', serif;
-        margin-left: 60px;
-    }
-    .tekst-papier-p {
-        margin-left: 60px;
-        width: 280px;
-        max-height: 270px;
-    }
+  .papierblok {
+    content: url('../images/border1.png');
+    width: 360px;
+    height: 450px;
+  }
+  .tekst-papier-titel {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+  }
+  .tekst-papier-subtitel {
+    font-family: 'Vollkorn', serif;
+    margin-left: 60px;
+  }
+  .tekst-papier-p {
+    margin-left: 60px;
+    width: 280px;
+    max-height: 270px;
+  }
 }
 
 @media only screen and (min-width: 520px) and (max-height: 700px) {
-    .papierblok {
-        content: url('../images/border-1-landscape.png');
-        max-width: 700px;
-        width: 700px;
-        height: auto;
-    }
-    .tekst-papier-titel {
-        margin-top: 80px;
-        margin-bottom: 20px;
-        margin-left: 90px;
-    }
-    .tekst-papier-subtitel {
-        font-family: 'Vollkorn', serif;
-        margin-left: 90px;
-    }
-    .tekst-papier-p {
-        margin-left: 90px;
-        width: 520px;
-        max-height: 185px;
-    }
+  .papierblok {
+    content: url('../images/border-1-landscape.png');
+    max-width: 700px;
+    width: 700px;
+    height: auto;
+  }
+  .tekst-papier-titel {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    margin-left: 90px;
+  }
+  .tekst-papier-subtitel {
+    font-family: 'Vollkorn', serif;
+    margin-left: 90px;
+  }
+  .tekst-papier-p {
+    margin-left: 90px;
+    width: 520px;
+    max-height: 185px;
+  }
 }
 
 @media only screen and (min-height: 700px) {
-    .papierblok {
-        max-width: 550px;
-        width: 550px;
-        height: 550px;
-        margin-left: 50px;
-        margin-top: 20px;
-    }
-    .cabanelf-main {
-        left: 30vw;
-        max-width: 80vw;
-    }
-    .tekst-papier-titel {
-        margin-top: 90px;
-        margin-bottom: 20px;
-        margin-left: 120px;
-    }
-    .tekst-papier-subtitel {
-        font-family: 'Vollkorn', serif;
-        margin-left: 120px;
-    }
-    .tekst-papier-p {
-        margin-left: 120px;
-        width: 405px;
-        max-height: 350px;
-    }
+  .papierblok {
+    max-width: 550px;
+    width: 550px;
+    height: 550px;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  .cabanelf-main {
+    left: 30vw;
+    max-width: 80vw;
+    overflow-y: hidden;
+  }
+  .tekst-papier-titel {
+    margin-top: 90px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+  }
+  .tekst-papier-subtitel {
+    font-family: 'Vollkorn', serif;
+    margin-left: 120px;
+  }
+  .tekst-papier-p {
+    margin-left: 120px;
+    width: 405px;
+    max-height: 350px;
+  }
 }
 
 @media only screen and (min-height: 700px) and (min-width: 1200px) {
-    .papierblok {
-        max-width: 650px;
-        width: 650px;
-        height: 650px;
-        margin-left: 75px;
-        margin-top: 50px;
-    }
-    .cabanelf-main {
-        left: 30vw;
-        max-width: 80vw;
-    }
-    .tekst-papier-titel {
-        margin-top: 140px;
-        margin-bottom: 20px;
-        margin-left: 170px;
-    }
-    .tekst-papier-subtitel {
-        font-family: 'Vollkorn', serif;
-        margin-left: 170px;
-    }
-    .tekst-papier-p {
-        margin-left: 170px;
-        width: 490px;
-        max-height: 400px;
-    }
+  .papierblok {
+    max-width: 650px;
+    width: 650px;
+    height: 650px;
+    margin-left: 125px;
+    margin-top: 50px;
+  }
+  .cabanelf-main {
+    left: 30vw;
+    max-width: 80vw;
+  }
+  .tekst-papier-titel {
+    margin-top: 140px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+  }
+  .tekst-papier-subtitel {
+    font-family: 'Vollkorn', serif;
+    margin-left: 170px;
+  }
+  .tekst-papier-p {
+    margin-left: 200px;
+    width: 520px;
+    max-height: 450px;
+  }
 }
