@@ -1,5 +1,4 @@
 html {
-  overflow-y: scroll;
   overflow-x: hidden; }
 
 p {
@@ -199,8 +198,7 @@ html {
     margin-top: 20px; }
   .cabanelf-main {
     left: 30vw;
-    max-width: 80vw;
-    overflow-y: hidden; }
+    max-width: 80vw; }
   .tekst-papier-titel {
     margin-top: 90px;
     margin-bottom: 20px;

@@ -1,5 +1,4 @@
 html {
-  overflow-y: scroll;
   overflow-x: hidden; }
 
 p {
@@ -78,7 +77,12 @@ html {
   filter: grayscale(100%);
   transition: all 1s ease; }
 
+.cabanelf-huis-background {
+  overflow: hidden;
+  min-height: 100vh; }
+
 .cabanelf-main {
+  overflow-y: hidden;
   position: absolute;
   left: 12vw;
   top: 7.5vh;

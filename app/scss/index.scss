@@ -1,7 +1,13 @@
 @import 'main.scss';
 @import 'effects.scss';
 
+.cabanelf-huis-background {
+  overflow: hidden;
+  min-height: 100vh;
+}
+
 .cabanelf-main {
+  overflow-y: hidden;
   position: absolute;
   left: 12vw;
   top: 7.5vh;
