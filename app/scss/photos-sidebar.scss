@@ -2,25 +2,32 @@
 @import 'effects.scss';
 
 .photos-container {
-    width: 200px;
-    height: 80vh;
+    margin-top: -30px;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/borderLeft.png) repeat-y;
+    background-position: right top;
+    z-index: -2;
+}
+
+.photos-container-bg {
+    margin-top: -30px;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    z-index: -1;
     background-color: #282828;
 }
 
 .photos-border {
-    margin-top: -30px;
-    margin-left: 200px;
-    width: 61px;
-    height: 80vh;
-    background: url(../images/borderLeft.png) repeat-y right;
+    margin-left: 25px;
+    padding-top: 75%;
 }
 
 .photo-sidebar {
     @extend .grayscale;
-    position: fixed;
-    width: 200px;
+    width: 80%;
     left: 20px;
-    z-index: 1;
 }
   
 .photo-sidebar:hover {
@@ -29,15 +36,12 @@
   
 #photo-sidebar-1 {
     @extend .photo-sidebar;
-    top: 200px;
 }
 
 #photo-sidebar-2 {
     @extend .photo-sidebar;
-    top: 400px;
 }
 
 #photo-sidebar-3 {
     @extend .photo-sidebar;
-    top: 600px;
 }
