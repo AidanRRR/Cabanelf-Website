@@ -1,13 +1,43 @@
-.cabanelf-photos-container {
-    width: 180px;
-    height: 100vh;
+@import 'main.scss';
+@import 'effects.scss';
+
+.photos-container {
+    width: 200px;
+    height: 80vh;
     background-color: #282828;
 }
 
-.cabanelf-photos-border {
+.photos-border {
     margin-top: -30px;
-    margin-left: 180px;
+    margin-left: 200px;
     width: 61px;
-    height: 100vh;
+    height: 80vh;
     background: url(../images/borderLeft.png) repeat-y right;
+}
+
+.photo-sidebar {
+    @extend .grayscale;
+    position: fixed;
+    width: 200px;
+    left: 20px;
+    z-index: 1;
+}
+  
+.photo-sidebar:hover {
+    filter: grayscale(0%);
+}
+  
+#photo-sidebar-1 {
+    @extend .photo-sidebar;
+    top: 200px;
+}
+
+#photo-sidebar-2 {
+    @extend .photo-sidebar;
+    top: 400px;
+}
+
+#photo-sidebar-3 {
+    @extend .photo-sidebar;
+    top: 600px;
 }
