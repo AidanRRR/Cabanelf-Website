@@ -1,9 +1,9 @@
 @import 'main.scss';
 @import 'effects.scss';
 
-// navbar:
-// navbar-seperator: 52px;
-// footer: 92px;
+html {
+  overflow: hidden !important;
+}
 
 .cabanelf-huis-background {
   overflow: hidden;
@@ -34,107 +34,4 @@
 
 .cabanelf-huis-background {
   background-color: $cabanelf-huis-bg;
-}
-
-.nav-pic-container {
-  visibility: visible;
-  position: fixed;
-  width: 425px;
-  height: 125px;
-  bottom: 0;
-  background-color: orange;
-  z-index: 2;
-  pointer-events: hover;
-}
-
-.nav-pic {
-  @extend .grayscale;
-  display: none;
-  position: fixed;
-  width: $nav-pic-size;
-  height: 70px;
-  bottom: 0;
-  background-size: contain;
-  z-index: 1;
-}
-
-.nav-pic:hover {
-  filter: grayscale(0%);
-}
-
-.nav-pic-1 {
-  @extend .nav-pic;
-  left: 0;
-  background-image: url('../images/fotos/nav-pic-1.jpg');
-  z-index: 1;
-}
-
-.nav-pic-2 {
-  @extend .nav-pic;
-  left: $nav-pic-size;
-  background-image: url('../images/fotos/nav-pic-2.jpg');
-}
-
-.nav-pic-3 {
-  @extend .nav-pic;
-  left: $nav-pic-size*2;
-  background-image: url('../images/fotos/nav-pic-3.jpg');
-}
-
-.nav-pic-1:hover + .background-picture-1 {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 1s linear;
-  filter: grayscale(0%);
-}
-
-.nav-pic-2:hover + .background-picture-2 {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 1s linear;
-  filter: grayscale(0%);
-}
-
-.nav-pic-3:hover + .background-picture-3 {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 1s linear;
-  filter: grayscale(0%);
-}
-
-.background-picture {
-  @extend .grayscale;
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100vh; //margin-top: -20px;
-  opacity: 0;
-  z-index: -5;
-}
-
-.background-picture-1 {
-  @extend .background-picture;
-  background: url('../images/fotos/nav-pic-1.jpg') no-repeat;
-  background-size: cover;
-  visibility: hidden;
-}
-
-.background-picture-2 {
-  @extend .background-picture;
-  background: url('../images/fotos/nav-pic-2.jpg') no-repeat;
-  background-size: cover;
-  visibility: hidden;
-}
-
-.background-picture-3 {
-  @extend .background-picture;
-  background: url('../images/fotos/nav-pic-3.jpg') no-repeat;
-  background-size: cover;
-  visibility: hidden;
-}
-
-@media only screen and (min-width: 600px) and (min-height: 550px) {
-  .nav-pic {
-    display: inline;
-  }
 }

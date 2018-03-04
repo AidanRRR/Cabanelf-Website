@@ -12,6 +12,25 @@ var runSequence = require('run-sequence');
 
 gulp.task('default', ['watch']);
 
+gulp.task('deploy-copy', function () {
+    return gulp.src(
+        [
+            '!app/scss/**/*',
+            'app/**/*',
+        ])
+        .pipe(gulp.dest('public'))
+})
+gulp.task('deploy-min-images', () =>
+    gulp.src('public/images/*')
+        .pipe(imagemin([
+            imagemin.optipng({ optimizationLevel: 5 },
+                {
+                    verbose: true
+                })
+        ]))
+        .pipe(gulp.dest('public/images/'))
+);
+
 gulp.task('sass', function () {
     return gulp.src('app/scss/**/*.scss')
         .pipe(sass())

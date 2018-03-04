@@ -45,6 +45,11 @@ html {
   margin-right: 5rem;
   margin-top: 2rem; }
 
+.footer {
+  display: none;
+  color: #C3C3C3;
+  margin-top: 20px; }
+
 .scrollbar-papier::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -59,6 +64,10 @@ html {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #555; }
 
+@media only screen and (min-height: 850px) and (min-width: 1000px) {
+  .footer {
+    display: block; } }
+
 @media only screen and (min-width: 350px) {
   .logo {
     margin-left: 25px;
@@ -72,10 +81,13 @@ html {
     width: 0px;
     background: transparent; } }
 
-.grayscale, .nav-pic, .nav-pic-1, .nav-pic-2, .nav-pic-3, .background-picture, .background-picture-1, .background-picture-2, .background-picture-3 {
+.grayscale {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: all 1s ease; }
+
+html {
+  overflow: hidden !important; }
 
 .cabanelf-huis-background {
   overflow: hidden;
@@ -103,83 +115,3 @@ html {
 
 .cabanelf-huis-background {
   background-color: #cdd6df; }
-
-.nav-pic-container {
-  visibility: visible;
-  position: fixed;
-  width: 425px;
-  height: 125px;
-  bottom: 0;
-  background-color: orange;
-  z-index: 2;
-  pointer-events: hover; }
-
-.nav-pic, .nav-pic-1, .nav-pic-2, .nav-pic-3 {
-  display: none;
-  position: fixed;
-  width: 120px;
-  height: 70px;
-  bottom: 0;
-  background-size: contain;
-  z-index: 1; }
-
-.nav-pic:hover, .nav-pic-1:hover, .nav-pic-2:hover, .nav-pic-3:hover {
-  filter: grayscale(0%); }
-
-.nav-pic-1 {
-  left: 0;
-  background-image: url("../images/fotos/nav-pic-1.jpg");
-  z-index: 1; }
-
-.nav-pic-2 {
-  left: 120px;
-  background-image: url("../images/fotos/nav-pic-2.jpg"); }
-
-.nav-pic-3 {
-  left: 240px;
-  background-image: url("../images/fotos/nav-pic-3.jpg"); }
-
-.nav-pic-1:hover + .background-picture-1 {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 1s linear;
-  filter: grayscale(0%); }
-
-.nav-pic-2:hover + .background-picture-2 {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 1s linear;
-  filter: grayscale(0%); }
-
-.nav-pic-3:hover + .background-picture-3 {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 1s linear;
-  filter: grayscale(0%); }
-
-.background-picture, .background-picture-1, .background-picture-2, .background-picture-3 {
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  opacity: 0;
-  z-index: -5; }
-
-.background-picture-1 {
-  background: url("../images/fotos/nav-pic-1.jpg") no-repeat;
-  background-size: cover;
-  visibility: hidden; }
-
-.background-picture-2 {
-  background: url("../images/fotos/nav-pic-2.jpg") no-repeat;
-  background-size: cover;
-  visibility: hidden; }
-
-.background-picture-3 {
-  background: url("../images/fotos/nav-pic-3.jpg") no-repeat;
-  background-size: cover;
-  visibility: hidden; }
-
-@media only screen and (min-width: 600px) and (min-height: 550px) {
-  .nav-pic, .nav-pic-1, .nav-pic-2, .nav-pic-3 {
-    display: inline; } }

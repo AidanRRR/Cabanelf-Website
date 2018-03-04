@@ -8,6 +8,7 @@
 }
 
 .photos-container {
+    display: none;
     margin-top: -30px;
     width: 110%;
     height: 200%;
@@ -38,11 +39,35 @@
 .photo-sidebar {
     @extend .grayscale;
     width: 75%;
-    // height: 50%;
     left: 20px;
     margin-top: 20px;
+    z-index: 2;
 }
   
 .photo-sidebar:hover {
     filter: grayscale(0%);
 }
+
+.photo-enlarge {
+    margin-top: -25px !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transition: opacity 1s linear !important;
+    filter: grayscale(0%) !important;
+}
+
+.photo-sidebar-full {
+    @extend .grayscale;
+    position: absolute;
+    top: -25;
+    left: -20px;
+    width: 105%;
+    opacity: 0;
+    z-index: -5;
+}
+
+@media only screen and (min-width: 850px) {
+    .photos-container {
+        display: block;
+    }
+  }
