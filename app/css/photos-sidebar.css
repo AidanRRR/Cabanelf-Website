@@ -112,15 +112,18 @@ html {
 
 .photos-border {
   display: flex;
-  height: 100%;
+  flex-wrap: nowrap;
+  height: 75vh;
   flex-direction: column;
-  margin-left: 16%;
-  padding-top: 45px; }
+  margin-left: 16%; }
 
 .photo-sidebar {
+  overflow: hidden;
+  object-fit: contain;
   width: 75%;
+  height: auto;
   left: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   z-index: 2; }
 
 .photo-sidebar:hover {
@@ -133,24 +136,37 @@ html {
 
 .photos-full-container {
   position: absolute;
-  width: 100%;
+  width: 105%;
   height: 100%;
   margin-left: -25px;
   margin-top: -25px; }
 
 .photo-sidebar-full {
   opacity: 0;
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  position: absolute; }
-
-.yellow {
   position: absolute;
-  min-width: 50%;
-  min-height: 50%;
-  background-color: yellow; }
+  z-index: -5; }
+
+@media only screen and (min-width: 800px) and (min-height: 600px) {
+  .photos-full-container {
+    height: 110%; } }
+
+@media only screen and (min-width: 1200px) and (min-height: 800px) {
+  .photos-full-container {
+    height: 120%; } }
 
 @media only screen and (min-width: 850px) {
   .photos-container {
     display: block; } }
+
+@media only screen and (min-height: 600px) {
+  .photo-sidebar {
+    margin-top: 25px; } }
+
+@media only screen and (min-height: 820px) {
+  .photo-sidebar {
+    width: 85%;
+    left: 10;
+    margin-top: 45px; } }
