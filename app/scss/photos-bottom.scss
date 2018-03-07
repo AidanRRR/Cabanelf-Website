@@ -1,0 +1,29 @@
+.mobile-gallery {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    
+    background-color: red;
+    width: 105%;
+    height: 150px;
+    bottom: 0;
+    z-index: 2;
+}
+
+@media only screen and (min-height: 480px) and (min-width: 200px) and (max-width: 470px) {
+    .mobile-gallery {
+        display: block;
+    }
+}
+
+@media only screen and (min-height: 600px) and (min-width: 470px) and (max-width: 600px) {
+    .mobile-gallery {
+        display: block;
+    }
+}
+
+@media only screen and (min-height: 660px) and (min-width: 600px) and (max-width: 750px) {
+    .mobile-gallery {
+        display: block;
+    }
+}
