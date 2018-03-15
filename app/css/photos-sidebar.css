@@ -86,14 +86,16 @@ html {
   filter: grayscale(100%);
   transition: all 1s ease; }
 
+#background-picture-5 {
+  display: none; }
+
 .gallery-container {
   background-color: red;
-  width: 100%;
-  min-height: 75vh; }
+  width: 100%; }
 
 .photos-container {
   display: none;
-  margin-top: -30px;
+  margin-top: -20px;
   width: 110%;
   height: 200%;
   min-height: 500px;
@@ -112,12 +114,13 @@ html {
 
 .photos-border {
   display: flex;
+  height: 60vh;
   flex-wrap: nowrap;
-  height: 75vh;
   flex-direction: column;
   margin-left: 16%; }
 
 .photo-sidebar {
+  flex: 1;
   overflow: hidden;
   object-fit: contain;
   width: 75%;
@@ -163,10 +166,26 @@ html {
 
 @media only screen and (min-height: 600px) {
   .photo-sidebar {
-    margin-top: 25px; } }
+    margin-top: 25px; }
+  #background-picture-5 {
+    display: block; }
+  .photos-border {
+    height: 65vh; } }
+
+@media only screen and (min-height: 700px) {
+  .photos-border {
+    height: 70vh; } }
 
 @media only screen and (min-height: 820px) {
   .photo-sidebar {
     width: 85%;
     left: 10;
-    margin-top: 45px; } }
+    margin-top: 35px; } }
+
+@media only screen and (min-height: 800px) {
+  .photos-border {
+    height: 75vh; } }
+
+@media only screen and (min-height: 1100px) {
+  .photos-border {
+    height: 85vh; } }

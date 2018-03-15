@@ -220,7 +220,7 @@ html {
     width: 405px;
     max-height: 350px; } }
 
-@media only screen and (min-height: 700px) and (min-width: 1200px) {
+@media only screen and (min-height: 700px) and (min-width: 1800px) {
   .papierblok {
     max-width: 650px;
     width: 650px;

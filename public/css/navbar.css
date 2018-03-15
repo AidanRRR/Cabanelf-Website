@@ -135,7 +135,7 @@ html {
 .nav-icon-bread:hover {
   text-decoration: none; }
 
-@media only screen and (min-width: 600px) and (min-height: 550px) {
+@media only screen and (min-height: 400px) {
   .navbar-seperator-bottom {
     display: inline; } }
 
