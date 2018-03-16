@@ -5,10 +5,34 @@
     display: none;
 }
 
-.gallery-container {
-    background-color: red;
-    width: 100%;
-    // min-height: 75vh;
+.photos-single-container {
+    position: relative;
+    z-index: 2;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-single-container {
+    height: 13vh;
+    overflow: hidden;
+}
+
+.photo-single {
+    @extend .grayscale;
+    display: block;
+    width: auto;
+    height: auto;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 25px;
+    max-width: 70%;
+    max-height: 100%;
+}
+
+.photo-single:hover {
+    filter: grayscale(0%);
 }
 
 .photos-container {
@@ -30,30 +54,6 @@
     min-height: 500px;
     z-index: -1;
     background-color: #282828;
-}
-
-.photos-border {
-    display: flex;
-    height: 60vh;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    margin-left: 16%;
-}
-
-.photo-sidebar {
-    @extend .grayscale;
-    flex: 1;
-    overflow: hidden;
-    object-fit: contain;
-    width: 75%;
-    height: auto;
-    left: 20px;
-    margin-top: 10px;
-    z-index: 2;
-}
-  
-.photo-sidebar:hover {
-    filter: grayscale(0%);
 }
 
 .photo-enlarge {
@@ -101,9 +101,6 @@
 }
 
 @media only screen and (min-height: 600px) {
-    .photo-sidebar {
-        margin-top: 25px;
-    }
     #background-picture-5 {
         display: block;
     }
@@ -119,10 +116,9 @@
 }
 
 @media only screen and (min-height: 820px) {
-    .photo-sidebar {
-        width: 85%;
-        left: 10;
-        margin-top: 35px;
+    .photo-single-container {
+        height: 15vh;
+        overflow: hidden;
     }
 }
 
