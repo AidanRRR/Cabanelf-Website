@@ -103,21 +103,21 @@
 @media only screen and (min-height: 600px) {
   .papierblok {
     content: url('../images/border1.png');
-    width: 360px;
+    width: 400px;
     height: 450px;
   }
   .tekst-papier-titel {
     margin-top: 60px;
     margin-bottom: 20px;
-    margin-left: 60px;
+    margin-left: 50px;
   }
   .tekst-papier-subtitel {
     font-family: 'Vollkorn', serif;
-    margin-left: 60px;
+    margin-left: 50px;
   }
   .tekst-papier-p {
-    margin-left: 60px;
-    width: 280px;
+    margin-left: 50px;
+    width: 320px;
     max-height: 270px;
   }
 }
@@ -145,7 +145,7 @@
   }
 }
 
-@media only screen and (min-height: 700px) {
+@media only screen and (min-height: 650px) {
   .papierblok {
     max-width: 550px;
     width: 550px;
